@@ -1,6 +1,10 @@
 import React from 'react'
 import Paper from 'material-ui/Paper';
 
+const AboutContentText = (
+  <div>
+  </div>
+)
 
 const About  = React.createClass({
   render() {
@@ -15,10 +19,6 @@ const About  = React.createClass({
       <div>
       1111
         <Paper style={style} zDepth={1} rounded={false} />
-        <Paper style={style} zDepth={2} rounded={false} />
-        <Paper style={style} zDepth={3} rounded={false} />
-        <Paper style={style} zDepth={4} rounded={false} />
-        <Paper style={style} zDepth={5} rounded={false} />
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router'
 import IconButton from 'material-ui/IconButton'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem';
@@ -7,6 +8,7 @@ import {
   Spacing,
   Typography,
 } from 'material-ui/styles';
+
 const LeftNav = React.createClass({
   getStyles() {
     return {
@@ -23,6 +25,7 @@ const LeftNav = React.createClass({
     }
   },
   render(){
+
     const { open, docked, closeLeftNav } = this.props
 
     const styles = this.getStyles()
@@ -37,8 +40,8 @@ const LeftNav = React.createClass({
         >
          Close
         </MenuItem>
-        <MenuItem>Menu Item</MenuItem>
-        <MenuItem>Menu Item 2</MenuItem>
+        <Link to={`/home`}><MenuItem>Home</MenuItem></Link>
+        <Link to={`/about`}><MenuItem>About</MenuItem></Link>
       </Drawer>
     )
   }

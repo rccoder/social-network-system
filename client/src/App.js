@@ -13,7 +13,6 @@ injectTapEventPlugin();
 ReactDOM.render(
   <Router
     history={browserHistory}
-    onUpdate={() => window.scrollTo(0, 0)}
   >
     {AppRoutes}
   </Router>
